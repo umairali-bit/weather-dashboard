@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="./assets/css/style.css" />
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.css" />
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Staatliches&display=swap"
         rel="stylesheet" />
     <title>weather-dashboard</title>
@@ -19,68 +18,33 @@
         <h1 class="text-center text-light p-3 mt-0">Weather Dashboard</h1>
     </header>
 
-    <main class="row mt-4 ml-2">
-     <section class="content-left">
-        <div class="col-12 col-lg-5 ml-2">
-            <form id="user-form">
-                <label class="form-label text-dark font-weight-bold" for="cityName">Search For A City:</label>
-                <input name="cityName" id="cityName" type="text" autofocus="true" class="w-100" />
+    <main class="flex-row justify-space-between">
+        <div class="col-12 col-md-4 col-lg-2 ml-2 mr-0">
+            <h4 class="form-header">Search for a City:</h4>
+            <form id="search-form">
+                <input name="cityname" id="cityname" type="text" autofocus="true" class="w-100 input" />
                 <button type="submit" class="btn mt-2 w-100 btn-primary">Search</button>
             </form>
             <div class="searches">
-                <h2>text</h2>
-                <h2>text</h2>
-                <h2>text</h2>
-                <h2>text</h2>
-                <h2>text</h2>
-
             </div>
 
         </div>
-     </section>
-        <section class="content-right">
-        <div class="col-lg-12 border rounded mt-2 box">
 
+        <div class="col-12 col-md-8">
+            <div class="current-weather" id="location-search">
+                <div class="flex-row justify-space-around list-item" id="weather-container">
 
-        </div>
+                </div>
 
-        <div class="col-lg-4 forecast">
-            <h2>5-Day Forecast:</h2>
-        </div>
-        <div class="row" id="five-day-forecast">
-            <div class="card-deck">
             </div>
         </div>
-
-      </section>
-
-
-
-
-
-
-
-
-
-
+      
 
     </main>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <script src="./assets/js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+<script src="./assets/js/script.js"></script>
 </body>
 
 </html>
