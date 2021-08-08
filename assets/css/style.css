@@ -1,4 +1,13 @@
 .current-weather {
     margin-left: 50%;
     margin-top: -10%;
+    width:100%;
+
+}
+
+
+.forecast{
+    margin-left: 49%;
+    width:105%;
+    margin-top: 10%;
 }
